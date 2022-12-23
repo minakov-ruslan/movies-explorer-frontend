@@ -1,0 +1,23 @@
+.section-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: -0.04em;
+  margin: 0;
+  padding: 110px 0 23px;
+  border-bottom: 1px #dadada solid;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .section-title {
+    padding: calc(110px - (110 - 90) * (1280px - 100vw) / (1280 - 768)) 0 23px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section-title {
+    padding: calc(90px - (90 - 70) * (768px - 100vw) / (768 - 320)) 0 calc(23px + (28 - 23) * (768px - 100vw) / (768 - 320));
+    font-size: calc(22px - (22 - 18) * (768px - 100vw) / (768 - 320));
+  }
+}

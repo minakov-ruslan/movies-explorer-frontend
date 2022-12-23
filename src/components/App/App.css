@@ -1,0 +1,15 @@
+.app {
+  background-color: #202020;
+  width: 100%;
+  color: #fff;
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.app__size {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+}
