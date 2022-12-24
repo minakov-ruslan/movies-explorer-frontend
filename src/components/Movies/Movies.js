@@ -18,8 +18,10 @@ function Movies() {
   return (
     <>
       <Header loggedIn={true} />
-      <SearchForm />
-      {isLoading ? <Preloader /> : <MoviesCardList isSavedMoviesPage={false} />}
+      <main>
+        <SearchForm />
+        {isLoading ? <Preloader /> : <MoviesCardList isSavedMoviesPage={false} />}
+      </main>
       <Footer />
     </>
   )

@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 410px;
   margin: 0 auto;
+  padding: 0 0 70px;
 }
 
 .profile__title {
@@ -91,6 +92,10 @@
 }
 
 @media scren and (max-width: 530px) {
+  .profile {
+    padding: 0 0 40px;
+  }
+
   .profile__edit-button {
     line-height: 1.25;
   }

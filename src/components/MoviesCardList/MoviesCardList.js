@@ -4,7 +4,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 
 function MoviesCardList({ isSavedMoviesPage }) {
   return (
-    <section className="movies__container">
+    <section className="movies">
       {isSavedMoviesPage ?
         <>
           <ul className="movies__list">

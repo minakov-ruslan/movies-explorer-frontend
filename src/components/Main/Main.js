@@ -10,11 +10,13 @@ function Main() {
   return (
     <>
       <Header loggedIn={false} />
-      <Promo />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
-      <Portfolio />
+      <main>
+        <Promo />
+        <AboutProject />
+        <Techs />
+        <AboutMe />
+        <Portfolio />
+      </main>
       <Footer />
     </>
   )

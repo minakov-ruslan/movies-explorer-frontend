@@ -44,19 +44,19 @@
   }
 }
 
-@media screen and (min-width: 680px) and (max-width: 768px) {
+@media screen and (min-width: 697px) and (max-width: 768px) {
   .promo__image {
     margin: 0 auto calc(70px - (70 - 40) * (768px - 100vw) / (768 - 320));
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 680px) {
+@media screen and (min-width: 320px) and (max-width: 697px) {
   .promo {
     overflow: hidden;
   }
 
   .promo__image {
-    margin: 0 calc(0px - (180 - 0) * (680px - 100vw) / (680 - 320)) calc(70px - (70 - 40) * (768px - 100vw) / (768 - 320)) 0;
+    margin: 0 calc(0px - (180 - 0) * (697px - 100vw) / (697 - 320)) calc(70px - (70 - 40) * (697px - 100vw) / (697 - 320)) 0;
   }
 }
 

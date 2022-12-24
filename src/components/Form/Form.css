@@ -1,3 +1,7 @@
+.form-container {
+  padding: 0 0 70px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -13,13 +17,16 @@
 
 .form__input {
   color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.23;
   height: 46px;
   background-color: #2f2f2f;
   border: none;
   outline: none;
   border-radius: 8px;
   margin: 10px 0 4px;
-  padding: 0;
+  padding: 0 0 0 15px;
 }
 
 .form__input:hover {
@@ -119,6 +126,10 @@
 }
 
 @media screen and (max-width: 560px) {
+  .form-container {
+    padding: 0 0 40px;
+  }
+
   .form__submit-button {
     line-height: 1.25;
   }

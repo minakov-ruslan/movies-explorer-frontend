@@ -13,11 +13,23 @@ function Login() {
         bottomLinkText="Регистрация"
       >
         <label htmlFor="login-email" className="form__label">E-mail</label>
-        <input id="login-email" type="email" className="form__input" />
+        <input
+          id="login-email"
+          type="email"
+          placeholder="E-mail"
+          className="form__input"
+          required
+        />
         <span className="form__error-caption form__error-caption_active">Что-то пошло не так...</span>
 
         <label htmlFor="login-password" className="form__label">Пароль</label>
-        <input id="login-password" type="password" className="form__input" />
+        <input
+          id="login-password"
+          type="password"
+          placeholder="Пароль"
+          className="form__input"
+          required
+        />
         <span className="form__error-caption form__error-caption_active">Что-то пошло не так...</span>
       </Form>
     </section>
