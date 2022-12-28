@@ -1,0 +1,83 @@
+.promo {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #073042;
+}
+
+.promo__title {
+  color: #fff;
+  max-width: 626px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+  margin: 50px 0 0 70px;
+}
+
+.promo__image {
+  max-width: 722px;
+  align-self: flex-end;
+  margin: 0 70px 60px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .promo {
+    min-height: calc(560px + (844 - 560) * (1280px - 100vw) / (1280 - 768));
+  }
+
+  .promo__title {
+    max-width: 680px;
+    margin: calc(50px + (300 - 50) * (1280px - 100vw) / (1280 - 768)) 0 0 calc(70px - (70 - 44) * (1280px - 100vw) / (1280 - 768));
+  }
+
+  .promo__image {
+    max-width: calc(722px - (722 - 680) * (1280px - 100vw) / (1280 - 768));
+    margin: 0 calc(70px - (70 - 44) * (1280px - 100vw) / (1280 - 768)) calc(60px + (70 - 60) * (1280px - 100vw) / (1280 - 768)) 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .promo__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 697px) and (max-width: 768px) {
+  .promo__image {
+    margin: 0 auto calc(70px - (70 - 40) * (768px - 100vw) / (768 - 320));
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 697px) {
+  .promo {
+    overflow: hidden;
+  }
+
+  .promo__image {
+    margin: 0 calc(0px - (180 - 0) * (697px - 100vw) / (697 - 320)) calc(70px - (70 - 40) * (697px - 100vw) / (697 - 320)) 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .promo {
+    min-height: calc(844px - (844 - 630) * (768px - 100vw) / (768 - 320));
+  }
+
+  .promo__title {
+    max-width: calc(680px - (680 - 300) * (768px - 100vw) / (768 - 320));
+    font-size: calc(40px - (40 - 31) * (768px - 100vw) / (768 - 320));
+    margin: calc(300px - (300 - 183) * (768px - 100vw) / (768 - 320)) 0 0 calc(44px - (44 - 10) * (768px - 100vw) / (768 - 320));
+  }
+
+  .promo__image {
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .promo__title {
+    line-height: 1.26;
+  }
+}
